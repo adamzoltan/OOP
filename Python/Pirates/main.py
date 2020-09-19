@@ -1,4 +1,5 @@
 from pirate import Pirate
+from ship import Ship
 
 if __name__ == "__main__":
     
@@ -9,3 +10,6 @@ if __name__ == "__main__":
     prirate_2 = Pirate("David")
 
     prirate_1.brawl(prirate_2)
+
+    ship = Ship()
+    ship.fill_ship()
