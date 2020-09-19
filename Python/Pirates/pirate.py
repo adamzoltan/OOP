@@ -1,7 +1,13 @@
+import random
+
 class Pirate:
     
     is_alive = True
+    is_conscious = True
     intoxication_level = 0
+
+    def __init__(self, name):
+        self.name = name
 
     def drink_some_rum(self):
         if self.is_alive:
@@ -22,3 +28,19 @@ class Pirate:
 
     def die(self):
         self.is_alive = False
+
+    def pass_out(self):
+        self.is_conscious = False
+
+    def brawl(self, pirate):
+        if self.is_alive and pirate.is_alive:
+            r = random.randint(1,3)
+            if r = 1:
+                self.die()
+            elif r = 2:
+                pirate.die()
+            else:
+                self.pass_out()
+                pirate.pass_out()
+        else:
+            echo("One of the pirates is already dead, they can't fight...")
