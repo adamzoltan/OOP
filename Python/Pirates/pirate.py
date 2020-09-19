@@ -28,16 +28,18 @@ class Pirate:
 
     def die(self):
         self.is_alive = False
+        print(f"{self.name} died!")
 
     def pass_out(self):
         self.is_conscious = False
+        print(f"{self.name} passed out!")
 
     def brawl(self, pirate):
         if self.is_alive and pirate.is_alive:
             r = random.randint(1,3)
-            if r = 1:
+            if r == 1:
                 self.die()
-            elif r = 2:
+            elif r == 2:
                 pirate.die()
             else:
                 self.pass_out()
