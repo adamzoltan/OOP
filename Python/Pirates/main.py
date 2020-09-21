@@ -5,12 +5,18 @@ if __name__ == "__main__":
     
     prirate_1 = Pirate("Jack")
     prirate_1.drink_some_rum()
-    prirate_1.hows_it_going_mate()
     
     prirate_2 = Pirate("David")
 
     prirate_1.brawl(prirate_2)
 
-    ship = Ship()
-    ship.fill_ship()
-    ship.ship_info()
+    print("ship1")
+    ship_1 = Ship("a")
+    ship_1.fill_ship()
+    ship_1.ship_info()
+    print("ship2")
+    ship_2 = Ship("b")
+    ship_2.fill_ship()
+    ship_2.ship_info()
+
+    ship_1.battle(ship_2)

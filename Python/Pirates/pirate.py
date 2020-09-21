@@ -1,13 +1,12 @@
 import random
 
 class Pirate:
-    
-    is_alive = True
-    is_conscious = True
-    intoxication_level = 0
 
     def __init__(self, name):
         self.name = name
+        self.is_alive = True
+        self.is_conscious = True
+        self.intoxication_level = 0
 
     def drink_some_rum(self):
         if self.is_alive:

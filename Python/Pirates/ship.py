@@ -2,8 +2,11 @@ from pirate import Pirate
 import random
 
 class Ship:
-    captain = None
-    crew = []
+
+    def __init__(self, name):
+        self.name = name
+        self.captain = None
+        self.crew = []
 
     def fill_ship(self):
         self.captain = Pirate("Captain Joe")
@@ -26,3 +29,16 @@ class Ship:
                 alive_pirates += 1
         print(captain_status)
         print(f"There are {alive_pirates} alive pirates on the ship.")
+    
+    def battle(self, ship):
+        self_score = Ship.calculate_score(self)
+        enemy_score = Ship.calculate_score(ship)
+        return(self_score > enemy_score)
+
+    @staticmethod
+    def calculate_score(ship):
+        alive_pirates = 0
+        for pirate in ship.crew:
+            if pirate.is_alive:
+                alive_pirates += 1
+        return(alive_pirates-ship.captain.intoxication_level)
