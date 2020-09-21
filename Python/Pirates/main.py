@@ -13,3 +13,4 @@ if __name__ == "__main__":
 
     ship = Ship()
     ship.fill_ship()
+    ship.ship_info()
