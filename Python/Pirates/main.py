@@ -1,5 +1,6 @@
 from pirate import Pirate
 from ship import Ship
+from armada import Armada
 
 if __name__ == "__main__":
     
@@ -20,3 +21,6 @@ if __name__ == "__main__":
     ship_2.ship_info()
 
     ship_1.battle(ship_2)
+
+    armada_1 = Armada("Spanish Armada")
+    armada_1.fill_armada()
