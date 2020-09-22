@@ -11,11 +11,11 @@ if __name__ == "__main__":
     prirate_1.brawl(prirate_2)
 
     print("ship1")
-    ship_1 = Ship("a")
+    ship_1 = Ship("Black Pearl")
     ship_1.fill_ship()
     ship_1.ship_info()
     print("ship2")
-    ship_2 = Ship("b")
+    ship_2 = Ship("Dutchman")
     ship_2.fill_ship()
     ship_2.ship_info()
 
