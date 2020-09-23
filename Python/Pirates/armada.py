@@ -23,10 +23,6 @@ class Armada():
         armada_counter = 0
         enemy_armada_counter = 0
         while armada_counter + 1 < armada_size and enemy_armada_counter + 1 < enemy_armada_size:
-            print(armada_size)
-            print(armada_counter)
-            print(enemy_armada_size)
-            print(enemy_armada_counter)
             if self.ships[armada_counter].battle(enemy_armada.ships[enemy_armada_counter]):
                 enemy_armada_counter += 1
             else:
