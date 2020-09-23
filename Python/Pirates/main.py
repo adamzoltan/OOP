@@ -20,7 +20,12 @@ if __name__ == "__main__":
     ship_2.fill_ship()
     ship_2.ship_info()
 
-    ship_1.battle(ship_2)
+    # ship_1.battle(ship_2)
 
+    print("-----------------")
     armada_1 = Armada("Spanish Armada")
     armada_1.fill_armada()
+    armada_2 = Armada("British Armada")
+    armada_2.fill_armada()
+
+    armada_1.war(armada_2)
