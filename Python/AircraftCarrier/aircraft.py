@@ -22,4 +22,7 @@ class Aircraft():
     def get_type(self):
         return(self.type)
 
+    def get_status(self):
+        return(f"Type: {self.get_type()}, Ammo: {self.current_ammo}, Base Damage: {self.base_damage}, All Damage: {self.current_ammo * self.base_damage}")
+
 
