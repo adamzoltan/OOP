@@ -4,6 +4,7 @@ class Aircraft():
         self.max_ammo
         self.base_damage
         self.current_ammo
+        self.is_priority
     
     def fight(self):
         dealt_damage = self.current_ammo * self.base_damage
