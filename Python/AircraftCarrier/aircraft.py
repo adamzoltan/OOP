@@ -19,5 +19,7 @@ class Aircraft():
             self.current_ammo = self.current_ammo + ammo
             return(0)
 
+    def get_type(self):
+        return(self.type)
 
 
