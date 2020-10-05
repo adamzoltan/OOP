@@ -9,3 +9,4 @@ if __name__ == "__main__":
     print(f16.get_status())
     print(f16.fight())
     print(f16.get_status())
+    print(f16.is_priority())

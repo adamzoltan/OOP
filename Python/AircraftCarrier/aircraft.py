@@ -27,5 +27,5 @@ class Aircraft():
         return(f"Type: {self.get_type()}, Ammo: {self.current_ammo}, Base Damage: {self.base_damage}, All Damage: {self.current_ammo * self.base_damage}")
 
     def is_priority(self):
-        return(self.is_priority)
+        return(self.priority)
 
