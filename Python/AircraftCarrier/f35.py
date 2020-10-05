@@ -6,4 +6,4 @@ class F35(Aircraft):
         self.max_ammo = 12
         self.base_damage = 50
         self.current_ammo = 0
-        self.is_priority = True
+        self.priority = True
