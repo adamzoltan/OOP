@@ -14,7 +14,10 @@ if __name__ == "__main__":
     print(f16.get_status())
     print(f16.is_priority())
 
-    my_carrier = Carrier("carrier", 5000, 10000)
+    my_carrier = Carrier("carrier", 15, 10000)
     my_carrier.add_aircraft(f16)
     my_carrier.add_aircraft(f35)
+    my_carrier.get_status()
+
+    my_carrier.fill()
     my_carrier.get_status()

@@ -15,9 +15,11 @@ class Aircraft():
         needed_ammo = self.max_ammo - self.current_ammo
         if ammo >= needed_ammo:
             self.current_ammo = self.current_ammo + needed_ammo
+            print(f"An {self.type} has been filled with {needed_ammo} ammo.")
             return(ammo - needed_ammo)
         else:
             self.current_ammo = self.current_ammo + ammo
+            print(f"An {self.type} has been filled with {ammo} ammo.")
             return(0)
 
     def get_type(self):
