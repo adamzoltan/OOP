@@ -36,5 +36,4 @@ class Carrier():
     @staticmethod
     def sort_aircrafts(aircrafts):
         sorted_aircrafts = sorted(aircrafts, key=lambda x: x.priority, reverse=True)
-        print(sorted_aircrafts)
         return(sorted_aircrafts)
