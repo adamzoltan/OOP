@@ -9,3 +9,11 @@ garden.add(Tree("purple"))
 garden.add(Tree("orange"))
 
 garden.garden_status()
+
+garden.water_plants(40)
+
+garden.garden_status()
+
+garden.water_plants(70)
+
+garden.garden_status()
